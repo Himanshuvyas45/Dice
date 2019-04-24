@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="game" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="table" translatesAutoresizingMaskIntoConstraints="NO" id="A0n-jE-knq">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="89" translatesAutoresizingMaskIntoConstraints="NO" id="zEZ-yV-Ep5">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Sum is:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eCg-74-QRi">
+                                        <rect key="frame" x="155" y="0.0" width="104" height="24"/>
+                                        <fontDescription key="fontDescription" name="GujaratiSangamMN-Bold" family="Gujarati Sangam MN" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="C7W-R6-YYU">
+                                        <rect key="frame" x="171" y="113" width="72" height="16"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dice2" translatesAutoresizingMaskIntoConstraints="NO" id="CsG-k9-ZRK">
+                                                <rect key="frame" x="0.0" y="0.0" width="16" height="16"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dice3" translatesAutoresizingMaskIntoConstraints="NO" id="ypf-5y-dTZ">
+                                                <rect key="frame" x="56" y="0.0" width="16" height="16"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OyM-UM-j3c">
+                                        <rect key="frame" x="184" y="218" width="46" height="498"/>
+                                        <state key="normal" title="Roll" image="Roll">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="Roll:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HC6-um-QMN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zEZ-yV-Ep5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="PA9-jr-c0G"/>
+                            <constraint firstItem="A0n-jE-knq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Vzu-gW-rR6"/>
+                            <constraint firstItem="A0n-jE-knq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Xu2-ky-4Xd"/>
+                            <constraint firstAttribute="bottom" secondItem="A0n-jE-knq" secondAttribute="bottom" id="Ywo-XJ-nKv"/>
+                            <constraint firstAttribute="trailing" secondItem="A0n-jE-knq" secondAttribute="trailing" id="azC-so-zwi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zEZ-yV-Ep5" secondAttribute="bottom" id="gOg-Jm-WOi"/>
+                            <constraint firstItem="zEZ-yV-Ep5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="h0a-tj-u8f"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zEZ-yV-Ep5" secondAttribute="trailing" id="zti-bs-n79"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="Dice2" destination="CsG-k9-ZRK" id="hBG-IX-SsM"/>
+                        <outlet property="Dice3" destination="ypf-5y-dTZ" id="tRH-xQ-c2I"/>
+                        <outlet property="lable" destination="eCg-74-QRi" id="oOG-3w-bn5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="259" y="27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Dice2" width="99" height="98"/>
+        <image name="Dice3" width="99" height="98"/>
+        <image name="Roll" width="32" height="32"/>
+        <image name="table" width="414" height="736"/>
+    </resources>
+</document>
